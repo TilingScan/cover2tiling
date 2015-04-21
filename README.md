@@ -2,7 +2,7 @@ Release notes 0.1
 
 # cover2tiling
 
-**Cover2Tiling** converts NGS data (from a sorted BAM file) to TilingScan input format.
+**Cover2Tiling** converts NGS data (from a sorted BAM file) into TilingScan input format.
 
 Requirements:
 
@@ -27,27 +27,27 @@ Now, 'cd' to the cover2tiling directory containing the source and type
 g++ cover2tiling.cpp -o cover2tiling 
 ```
 
-This will generate an executable for **cover2tiling**.
+This will generate an executable for **cover2tiling**. Now copy this file to your data directory, or add it to your PATH.
 
 
 ### Windows
 
-You can compile **cover2tiling** using your favorite IDE, such as **DevC++**. 
+You can compile **cover2tiling** using an IDE, such as **DevC++**. 
 
 
 
 ## How to use
 
-First, you must generate the coverage from your BAM file with the data (**note that your BAM must be sorted**). For this, open a new terminal and use the SAMTOOLS *mpileup* command:
+First, you must generate the coverage from your BAM file with the data (**note that your BAM must be sorted**). For this, open a new terminal and 'cd' to your data directory. Next, use the SAMTOOLS *mpileup* command to get the coverage from your BAM file:
 
 ```
 samtools mpileup your_bam_file.bam > cover.txt
 ```
-
-This will generate you a *.txt* file with the coverage. Now, to use the **cover2tiling** to generate the TilingScan format from the cover file, execute:
+Remember to replace **your_bam_file.bam** with the name of your real BAM file.
+This will generate you a file named **cover.txt** with the coverage. Now, use the **cover2tiling** to generate the TilingScan format from the cover file:
 
 ```
-./cover2tiling cover.txt output.txt N
+cover2tiling cover.txt output.txt N
 ```
 
 Where:
