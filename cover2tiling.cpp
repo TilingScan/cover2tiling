@@ -283,13 +283,14 @@ void SaveFile(string file, Chrs l)
 	ofstream salida;
 	Chrs c;
 	Hit h;
+	int cont = 1;
 	
 	//Open the file
 	salida.open(file.c_str());
 	
 	//Save the headers
 	salida << "# File generated with Cover2Tiling" << endl;
-	salida << "# Created by Vicente Arnau & Jose M. Juanes" << endl;
+	salida << "# http://github.com/TilingScan/cover2tiling" << endl;
 	
 	//Starts the list
 	c = l;
@@ -301,7 +302,7 @@ void SaveFile(string file, Chrs l)
 		salida << endl;
 		
 		//Save the chromosome header
-		salida << "# Sequence x" << endl;
+		salida << "# Sequence " << cont << endl;
 		salida << "# Name	" << c->name << endl;
 		salida << "# Number Of Hits	" << c->num << endl;
 		salida << endl;
@@ -321,6 +322,9 @@ void SaveFile(string file, Chrs l)
 		
 		//Next chromosome
 		c = c->sig;
+
+		//Update cont
+		cont = cont + 1;
 	}
 	
 	//Close the file
