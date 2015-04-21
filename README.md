@@ -47,7 +47,7 @@ samtools mpileup your_bam_file.bam > cover.txt
 This will generate you a *.txt* file with the coverage. Now, to use the **cover2tiling** to generate the TilingScan format from the cover file, execute:
 
 ```
-./cover2tiling cover.txt output.txt **N**
+./cover2tiling cover.txt output.txt N
 ```
 
 Where:
