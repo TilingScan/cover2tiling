@@ -401,7 +401,7 @@ void CheckArguments(int n)
 		cout << "cover2tiling  cover_file  tiling_file N" << endl << endl;
 		cout << "Where:" << endl;
 		cout << "cover_file  : Output file of samtools mpileup comand." << endl;
-		cout << "tiling_file : Output file to used in http://tilingscan.uv.es/." << endl;
+		cout << "tiling_file : Output file to be used in http://tilingscan.uv.es/." << endl;
 		cout << "N           : Average nucleotides for each hit. It must be odd." << endl << endl;
 		
 		//Wait
