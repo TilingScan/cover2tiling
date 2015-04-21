@@ -7,7 +7,7 @@ Release notes 0.1
 Requirements:
 
 - A minimum knowledge of using the Linux/Windows terminal.
-- **SAMTOOLS latest version** (important!). You can download it and install here: http://www.htslib.org/download/
+- **SAMTOOLS latest version** (important!). You can download it and read the installation manual here: http://www.htslib.org/download/
 - **Cover2Tiling binary**. You can compile it from the source (see below), or download the latest release from https://github.com/TilingScan/cover2tiling/releases
 
 
