@@ -64,7 +64,7 @@ That's all! Now you can use the output file generated in **TilingScan**.
 If you have any question, or want a personalized version of **cover2tiling**, feel free to contact with us:
 
 V.Arnau: Vicente.Arnau@uv.es 
-J.M.Juanes: jmjuanes@outlook.com 
+J.M.Juanes: josemijuanes@gmail.com 
 
 
 
